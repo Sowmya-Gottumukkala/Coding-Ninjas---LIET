@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #f17026;
+    color: #111111;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .brand {
+    display: flex;
+    align-items: center;
+}
+
+header img.logo {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+header .quick-links {
+    display: flex;
+    gap: 20px;
+}
+
+header .quick-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    background-image: url('Banner.png'); 
+    background-size: cover; 
+    color: #fff;
+}
+
+main img.header-logo {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+}
+
+footer {
+    background-color: #f17026;
+    color: #111111;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Updated styles for the enhanced roadmap section */
+.roadmap {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    margin: 20px 0;
+    text-align: center;
+    font-family: 'Futura', sans-serif;
+    overflow: hidden; /* Ensure all items stay in the same line */
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column; /* Change the direction to column */
+    align-items: center;
+}
+
+.event {
+    display: flex;
+    flex-direction: column; /* Arrange events vertically */
+    align-items: center;
+    margin-bottom: 40px; /* Adjust spacing between events */
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f17026;
+    margin-bottom: 10px; /* Adjust spacing between circle and content */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.event:hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.event:hover .circle {
+    background-color: #333;
+    transform: scale(1.2);
+}
+
+.content {
+    max-width: 400px;
+    text-align: center; /* Adjust text alignment */
+    transform-origin: left center;
+    transition: transform 0.3s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.event:hover .content {
+    transform: scale(1.05);
+}
