@@ -1,1 +1,1 @@
-# Coding-Ninjas---LIET
+# Coding-Ninjas-LIET
