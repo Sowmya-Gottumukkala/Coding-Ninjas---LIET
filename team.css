@@ -141,3 +141,13 @@ body {
                 flex: 1 1 100%;
             }
         }
+
+footer {
+    background-color: #f17026;
+    color: #111111;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
