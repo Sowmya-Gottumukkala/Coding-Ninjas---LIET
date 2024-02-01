@@ -90,38 +90,36 @@ body {
 			font-size:25px;
         }
 
-        .social-icons {
+           .social-icons {
             margin-top: 20px;
         }
 
         .social-icons a {
-            display: inline-block;
-            margin: 0 10px;
-            color: #3498db;
-            text-decoration: none;
-            font-size: 16px;
-            transition: color 0.3s ease-in-out;
-        }
+    display: inline-block;
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
 
-        .social-icons a img {
-            width: 25px;
-            height: 25px;
-        }
+.social-icons a img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease-in-out;
+}
 
-        .social-icons a:hover {
-            color: #2980b9;
-        }
+.social-icons a:hover {
+    color: black; /* Change the color on hover */
+}
 
-        .social-icons a img {
-            width: 25px;
-            height: 25px;
-            transition: transform 0.3s ease-in-out;
-        }
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
 
-        .social-icons a:hover img {
-            transform: scale(1.2);
-        }
-
+.social-icons a[href*="github.com"]:hover {
+    color: black; /* Your desired color for GitHub on hover */;
+}
         @keyframes glow {
             0% {
                 box-shadow: 0 0 15px rgba(241, 112, 38, 0);
