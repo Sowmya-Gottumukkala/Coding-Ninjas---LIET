@@ -155,7 +155,7 @@
     const now = new Date();
     const options = { hour: '2-digit', minute: '2-digit', hour12: false };
     const timeString = now.toLocaleTimeString('en-US', options);
-    document.getElementById('date-time').innerText = ${now.getDate()} February, ${timeString};
+    document.getElementById('date-time').innerText = `${now.getDate()} February, ${timeString}`;
   }
 
   function showProblem() {
