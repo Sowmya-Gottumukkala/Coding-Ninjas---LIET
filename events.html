@@ -1,0 +1,214 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Ninjas Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"  type="image/png" href="cn.png">
+</head>
+<body>
+    <h1>Events Page</h1>
+    <header>
+	    <img src="@LIET-2.png" alt=""  width="100" height="100"  class="image">
+        <!-- Include any header content you want -->
+      	<style>
+		body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+
+header {
+    background-color: #f17026;
+    color: #111111;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+header .brand {
+    display: flex;
+    align-items: center;
+}
+
+header img.logo {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+header .quick-links {
+    display: flex;
+    gap: 20px;
+}
+
+header .quick-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    background-image: url('1Banner.png'); 
+    background-size: cover; 
+    color: #fff;
+}
+
+main img.header-logo {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+}
+
+footer {
+    background-color: #f17026;
+    color: #111111;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Updated styles for the enhanced roadmap section */
+.roadmap {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    margin: 20px 0;
+    text-align: center;
+    font-family: 'Futura', sans-serif;
+    overflow: hidden; /* Ensure all items stay in the same line */
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column; /* Change the direction to column */
+    align-items: center;
+}
+
+.event {
+    display: flex;
+    flex-direction: left; /* Arrange events vertically */
+    align-items: center;
+    margin-bottom: 40px; /* Adjust spacing between events */
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f17026;
+    margin-bottom: 10px; /* Adjust spacing between circle and content */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.event:hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.event:hover .circle {
+    background-color: #333;
+    transform: scale(1.2);
+}
+
+.content {
+    max-width: 700px;
+    text-align: center; /* Adjust text alignment */
+    transform-origin: left center;
+    transition: transform 0.3s ease-in-out;
+}
+.main-div{
+    max-width: 400%;
+    padding: 10px;
+    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    justify-content: space-around;
+}
+.col1, .col2{
+        max-width: 180%;
+        padding: 10px;
+}
+button{
+     background-color: #f17026;
+     border-radius: 6px;
+    
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.event:hover .content {
+    transform: scale(1.05);
+}
+	</style>
+    </header>
+
+    <section id="events">
+        <div class="main-div">
+            <div class="col1">
+                 <h1>CN EVENTS</h1><hr>
+                 <h2>Hackton</h2>
+                 <img src="cn.png"  width="200" height="200"><br>
+                 <button   class="button" type="submit"  onclick="location.href='https://www.codingninjas.com/studio/events/ninjasprint-idea-thon-1-0?utm_source=campus-ambassador&utm_medium=ET&utm_campaign=CN16742'">Register</button>
+                 <h2>-------------</h2>
+                 <img src="cn.png"  width="200" height="200"><br>
+                 <button type="submit" onclick="location.href='https://www.codingninjas.com/studio/events/ninjasprint-idea-thon-1-0?utm_source=campus-ambassador&utm_medium=ET&utm_campaign=CN16742'" >Register</button>
+                 <h2>2----------</h2>
+                 <img src="cn.png"  width="200" height="200"><br>
+                 <button type="submit"  onclick="location.href='https://www.codingninjas.com/studio/events/ninjasprint-idea-thon-1-0?utm_source=campus-ambassador&utm_medium=ET&utm_campaign=CN16742'">Register</button>
+                 <h2>3----------</h2>
+                 <img src="cn.png"  width="200" height="200"><br>
+                 <button type="submit"  onclick="location.href='https://www.codingninjas.com/studio/events/ninjasprint-idea-thon-1-0?utm_source=campus-ambassador&utm_medium=ET&utm_campaign=CN16742'" >Register</button>
+            </div>
+            <div class="col2">
+              <h1>CN@LIET EVENTS</h1><hr>
+              <h2>Hackton</h2>
+                 <img src="cn.png"  width="200" height="200"><br>
+                 <button type="submit"  onclick="location.href='https://www.codingninjas.com/studio/events/ninjasprint-idea-thon-1-0?utm_source=campus-ambassador&utm_medium=ET&utm_campaign=CN16742'">Register</button>
+                 <button type="click"  onclick="location.href='https://www.codingninjas.com/studio/events/ninjasprint-idea-thon-1-0?utm_source=campus-ambassador&utm_medium=ET&utm_campaign=CN16742'"> View</button>
+                 <h2>2--------</h2>
+                 <img src="cn.png"  width="200" height="200"><br>
+                 <button type="submit"  onclick="location.href='https://www.codingninjas.com/studio/events/ninjasprint-idea-thon-1-0?utm_source=campus-ambassador&utm_medium=ET&utm_campaign=CN16742'">Register</button>
+                 <button type="click"  onclick="location.href='https://www.codingninjas.com/studio/events/ninjasprint-idea-thon-1-0?utm_source=campus-ambassador&utm_medium=ET&utm_campaign=CN16742'"> View</button>
+                 <h2>2--------</h2>
+                 <img src="cn.png"  width="200" height="200"><br>
+                 <button type="submit"  onclick="location.href='https://www.codingninjas.com/studio/events/ninjasprint-idea-thon-1-0?utm_source=campus-ambassador&utm_medium=ET&utm_campaign=CN16742'" >Register</button>
+                 <button type="click"  onclick="location.href='https://www.codingninjas.com/studio/events/ninjasprint-idea-thon-1-0?utm_source=campus-ambassador&utm_medium=ET&utm_campaign=CN16742'"> View</button>
+                 <h2>3--------</h2>
+                 <img src="cn.png"  width="200" height="200"><br>
+                 <button type="submit"  onclick="location.href='https://www.codingninjas.com/studio/events/ninjasprint-idea-thon-1-0?utm_source=campus-ambassador&utm_medium=ET&utm_campaign=CN16742'">Register</button>
+                 <button type="click"  onclick="location.href='https://www.codingninjas.com/studio/events/ninjasprint-idea-thon-1-0?utm_source=campus-ambassador&utm_medium=ET&utm_campaign=CN16742'"> View</button>
+            </div>
+        </div>
+        <!-- Add content related to events -->
+    </section>
+
+
+    <footer>
+        &copy; 2024 Coding Ninjas. All rights reserved.
+    </footer>
+</body>
+</html>
