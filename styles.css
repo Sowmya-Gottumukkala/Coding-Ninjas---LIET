@@ -55,7 +55,7 @@ main img.header-logo {
 footer {
     background-color: #f17026;
     color: #111111;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -128,3 +128,7 @@ footer {
 .event:hover .content {
     transform: scale(1.05);
 }
+
+
+
+
