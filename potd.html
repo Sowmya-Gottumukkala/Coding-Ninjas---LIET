@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,8 +14,8 @@
       padding: 20px;
     }
 	.card {
-      background: rgb(239,240,97);
-      background: linear-gradient(0deg, rgba(239,240,97,1) 0%, rgba(241,152,88,1) 100%);
+       background-color: #f5f5f5;
+    
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       transition: 0.3s;
       padding: 20px;
@@ -21,18 +23,13 @@
 	  }
 	  
 	  .card1 {
-      background-color: #f7e5c9;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      background-color: #ffff;
+   box-shadow: 0 4px 8px 0 rgba(255, 165, 0, 0.2);
+ color:#000000;
       transition: 0.3s;
       padding: 20px;
       margin-top: 40px;
 	  }
-   header {
-      text-align: center;
-	  font-family: georgia;
-	  font-size: 3rem;
-	  margin-bottom: 30px;
-    }
 
     
     main {
@@ -54,23 +51,25 @@
     main button:hover {
       background-color:#d5334e;
     }
+	footer {
+    background-color: #f17026;
+    color: #111111;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 	
-	footer{
-	 text-align: center;
-	}
-
   </style>
   <title>Problem of the Day</title>
 </head>
 <body>
-  <header align="center">
-    <img src="@LIET-2.png" width="100" height="100"  align:"center" >
+    <header align="center>
+	    <img src="@LIET-2.png" width="100" height="100"  class="image">
     <h3>Problem Of The Day</h3>
-    <p id="date-time"></p>
-  </header>
-  
-  
-    
+    <p id="date-time"></p> 
+    </header>   
 
   <div class="card" >
   <main>
@@ -145,11 +144,15 @@
             </div>
         </div>
     </div>
+
+	  <footer>
+        
+        &copy; 2024 Coding Ninjas. All rights reserved.
+    </footer>
+
     
   </main>
-  <footer>
-	<h5>  &copy; 2024 Coding Ninjas. All rights reserved.</h5>
-  </footer>
+ 
   
   <script>
   function updateTime() {
@@ -179,8 +182,6 @@
   updateTime();
 </script>
 
- <footer>
-        &copy; 2024 Coding Ninjas. All rights reserved.
-    </footer>
+ 
 </body>
 </html>
